@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Drawer.module.css'; // Importing the CSS module
+import styles from './Drawer.module.css';
+import { IoIosClose, IoIosMenu } from 'react-icons/io';
+
 
 const Drawer = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,14 +15,14 @@ const Drawer = () => {
     <>
       
       <button className={styles.drawerToggleBtn} onClick={toggleDrawer}>
-        {isOpen ? 'Close' : 'Open'} Drawer
+        {isOpen ? ( <IoIosClose color={'#000'} size={30} /> ) : ( <IoIosMenu color={'#000'} size={30} /> )} 
       </button>
       
       
       <div className={`${styles.drawer} ${isOpen ? styles.drawerOpen : ''}`}>
-        <button className={styles.drawerToggleBtn} onClick={toggleDrawer}>
-          {isOpen ? 'Close' : 'Open'} Drawer
-        </button>
+      <button className={styles.drawerToggleBtn} onClick={toggleDrawer}>
+        {isOpen ? ( <IoIosClose  color={'#000'} size={30} /> ) : ( <IoIosMenu size={30} /> )} 
+      </button>
         <ul className={styles.drawerUl}>
           <li className={styles.drawerLi}><Link to="/" className={styles.drawerLink}>Home</Link></li>
           <li className={styles.drawerLi}><Link to="/projects" className={styles.drawerLink}>Projects</Link></li>

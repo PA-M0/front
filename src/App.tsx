@@ -3,6 +3,7 @@ import RouteConfig from './routes/RouteConfig';
 import './App.css';
 import Header from './Components/Header/Header';
 import Drawer from './Components/Drawer/Drawer';
+import Breadcrumb from "./Components/BreadCrumb/BreadCrumb";
 
 function App() {
   
@@ -12,10 +13,10 @@ function App() {
     <>
     <Router>
       <div className="app">
-        <Header />
+          {/* <Header /> */}
         <Drawer />
         <div className="content">
-          <p ></p>
+          <Breadcrumb />
           <h1>Projects Management</h1>
           <RouteConfig />
         </div>

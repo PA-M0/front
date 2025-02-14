@@ -9,8 +9,7 @@ body {
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,6 +19,16 @@ body {
 
 .app {
   width: max-content;
+}
+
+.content {
+  margin-top: 2rem;
+  border: 1px solid #ebebeb;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  min-width: 87vw;
+  min-height: 80vh;
+  padding: 2rem;
 }
 
 

@@ -1,0 +1,33 @@
+.breadcrumb {
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+  }
+  
+  .breadcrumbList {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .breadcrumbItem {
+    margin-right: 8px;
+  }
+  
+  .breadcrumbItem a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .breadcrumbItem a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumbItem::after {
+    content: '/';
+    margin-left: 8px;
+  }
+  
+  .breadcrumbItem:last-child::after {
+    content: '';
+  }
+  
