@@ -1,0 +1,49 @@
+.drawerToggleBtn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -250px; 
+  width: 250px;
+  background-color: #333;
+  color: white;
+  height: 100%;
+  transition: left 0.3s ease-in-out;
+  padding-top: 20px;
+}
+
+.drawerOpen {
+  left: 0; /* Move into view when open */
+}
+
+.drawerUl {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.drawerLi {
+  margin: 15px 0;
+}
+
+.drawerLink {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 8px 16px;
+}
+
+.drawerLink:hover {
+  background-color: #575757;
+}

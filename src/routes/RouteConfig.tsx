@@ -10,7 +10,7 @@ const RouteConfig = () => {
           <Route
             key={index}
             path={route.path}
-            //exact={route.exact}
+            exact={route.exact}
             Component={route.element}
           />
         ))}
