@@ -26,10 +26,10 @@ const Drawer = () => {
         <ul className={styles.drawerUl}>
           <li className={styles.drawerLi}><Link to="/" className={styles.drawerLink}>Home</Link></li>
           <li className={styles.drawerLi}><Link to="/projects" className={styles.drawerLink}>Projects</Link></li>
-          <li className={styles.drawerLi}><Link to="/roles" className={styles.drawerLink}>Roles</Link></li>
           <li className={styles.drawerLi}><Link to="/contacts" className={styles.drawerLink}>Contacts</Link></li>
           <li className={styles.drawerLi}><Link to="/employees" className={styles.drawerLink}>Employees</Link></li>
           <li className={styles.drawerLi}><Link to="/customer" className={styles.drawerLink}>Customers</Link></li>
+          <li className={styles.drawerLi}><Link to="/services" className={styles.drawerLink}>Services</Link></li>
         </ul>
       </div>
     </>
